@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .flex-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row;
+            border-radius: 4px;
+            box-shadow: 0 3px 4px #8b8b8b;
+            background: linear-gradient(#787878 0, #5E5E5E 50%, #707070 51%, #838383 100%);
+            font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif;
+            letter-spacing: -0.5px;
+            font-size: 13px;
+            text-shadow: 0 -1px 3px #202020;
+        }
+
+        .flex-nav li {
+            flex: 1;
+            flex: 1 1 50%;
+            flex-basis: 100%;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .flex-nav li a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            line-height: 34px;
+            outline: none;
+        }
+
+        .flex-nav ul li {
+            display: block;
+            float: left;
+            border-right: 1px solid #5d5d5d;
+            border-left: 1px solid #929292;
+            width: 105px;
+            height: 34px;
+            border-bottom: 1px solid #575757;
+            border-top: 1px solid #797979;
+        }
+
+        .flex-nav ul li input {
+            width: 76px;
+            height: 20px;
+            margin-left: 9px;
+            margin-top: 8px;
+            border: none;
+            padding-left: 20px;
+            padding-right: 10px;
+            color: #eee;
+            border-radius: 10px;
+            background-image: url("../images/magnifier.png"), -webkit-gradient(linear, left bottom, left top, color-stop(0, #747474), color-stop(0.5, #6E6E6E), color-stop(0.51, #7E7E7E), color-stop(1, #8D8D8D));
+            background-image: url("../images/magnifier.png"), linear-gradient(center bottom, #747474 0%, #6E6E6E 50%, #7E7E7E 51%, #8D8D8D 100%);
+            background-repeat: no-repeat;
+            box-shadow: inset 0 2px 1px 1px #363636;
+        }
+
+        .flex-nav ul li:first-child {
+            border-radius: 4px 0 0 4px;
+            border-left: none;
+        }
+
+        .flex-nav ul li:first-child a img {
+            vertical-align: middle;
+            margin-top: -2px;
+        }
+
+        .flex-nav ul li:last-child {
+            border-radius: 0 4px 4px 0;
+            border-right: none;
+            width: 124px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <nav class="flex-nav">
+            <ul>
+                <li><a href="#">logo</a> </li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPod</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iTunes</a></li>
+                <li><a href="#">Support</a></li>
+                <li><input type="text"></li>
+            </ul>
+        </nav>
+        <div>white text</div>
+    </div>
+    <div class="grid">
+        <div id="img1"></div>
+        <div id="img2"></div>
+        <div id="img3"></div>
+        <div id="img4"></div>
+    </div>
+</body>
+<footer>
+    <div class="footerGrid">
+
+    </div>
+</footer>
+
+</html>
